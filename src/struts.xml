@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    
+	<package name="com" namespace="/" extends="struts-default">
+        <action name="hello" class="com.helloAction">
+            <result>/hello.jsp</result>
+        </action>
+        <action name="authorbook" class="com.helloAction">
+            <result>/authorbook.jsp</result>
+        </action>
+        <action name="book" class="com.bookAction">
+            <result name="success">/book.jsp</result>
+            <result name="error">/fail.jsp</result>
+            <result name="input">/nobook.jsp</result>
+        </action>
+        <action name="detailinfo" class="com.infoAction">
+            <result name="success">/info.jsp</result>
+            <result name="error">/fail.jsp</result>
+            <result name="input">/fail.jsp</result>
+        </action>
+        <action name="deletebook" class="com.deleteAction">
+            <result name="success">/book.jsp</result>
+            <result name="error">/fail.jsp</result>
+            <result name="input">/nobook.jsp</result>
+        </action>
+        <action name="increase" class="com.helloAction">
+            <result>/increase.jsp</result>
+        </action>
+        <action name="increasebook" class="com.increaseAction">
+            <result name="success">/successincrease.jsp</result>
+            <result name="error">/increaseauthor.jsp</result>
+            <result name="input">/fail.jsp</result>
+        </action>
+        <action name="increaseauthor" class="com.increaseAuthorAction">
+            <result name="success">/successincrease.jsp</result>
+            <result name="error">/fail.jsp</result>
+            <result name="input">/fail.jsp</result>
+        </action>
+        
+        <action name="update" class="com.helloAction">
+            <result>/update.jsp</result>
+        </action>
+        <action name="updatebook" class="com.updateAction">
+            <result name="success">/updatedetail.jsp</result>
+            <result name="error">/fail.jsp</result>
+            <result name="input">/nobook.jsp</result>
+        </action>
+        <action name="updateresult" class="com.updatedetailAction">
+            <result name="success">/successupdate.jsp</result>
+            <result name="error">/updateauthor.jsp</result>
+            <result name="input">/fail.jsp</result>
+        </action>
+        <action name="updateauthor" class="com.updateAuthorAction">
+            <result name="success">/successupdate.jsp</result>
+            <result name="error">/fail.jsp</result>
+            <result name="input">/fail.jsp</result>
+        </action>
+        <action name="contact" class="com.helloAction">
+           <result>/contact.jsp</result>
+        </action>
+    </package>
+    
+
+</struts>
